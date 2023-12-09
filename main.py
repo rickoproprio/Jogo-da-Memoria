@@ -70,10 +70,10 @@ class MemoryGame:
         self.master.update()
 
         if self.user_input[-1] != self.sequence[len(self.user_input) - 1]:
-            messagebox.showinfo("Result", "Wrong! Game over.")
+            messagebox.showinfo("Atenção", "Game over :(")
             self.reset_game()
         elif len(self.user_input) == len(self.sequence):
-            messagebox.showinfo("Result", "Correct! Next level.")
+            messagebox.showinfo("Atenção", "Parabéns! Próximo level.")
             self.user_input = []
             self.score += 1 
             self.score_label['text'] = f"Score: {self.score}"
